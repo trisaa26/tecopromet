@@ -39,7 +39,7 @@ body.modal-open {
   inset: 0;
   width: 85%;
   height: 100%;
-  clip-path: polygon(0 0, 86% 0, 74% 100%, 0 100%);
+  clip-path: polygon(8% 0, 86% 0, 74% 100%, 0 100%);
   padding: 20px 0;
   background-color: white;
   z-index: -1;
@@ -887,6 +887,9 @@ body.modal-open {
 }
 
 @media only screen and (max-width: 1399px) {
+  .header .clip-path-content {
+    clip-path: polygon(0 0, 88% 0, 74% 99%, 0 100%);
+  }
   .header .navbar-collapse .navbar-nav {
     margin-left: 60px !important;
   }
@@ -1003,9 +1006,6 @@ body.modal-open {
 @media only screen and (max-width: 991px) {
   .header {
     top: 0;
-  }
-  .header .clip-path-content {
-    clip-path: polygon(0 0, 88% 0, 74% 99%, 0 100%);
   }
   .header .bg {
     background-position: 55%;
