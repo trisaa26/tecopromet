@@ -53,9 +53,6 @@ body.modal-open {
   width: 100%;
   z-index: 100;
 }
-.header .bg {
-  background-image: url(img/header-bg-1-1.png);
-}
 .header .header-logo {
   margin-left: -30px;
 }
@@ -1333,7 +1330,6 @@ body.modal-open {
 @media only screen and (max-width: 575px) {
   .header .bg {
     background-position: 63%;
-    background-image: url(img/header-bg-2.png);
   }
   .hero-section {
     margin-bottom: 160px;

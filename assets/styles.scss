@@ -69,10 +69,6 @@ body.modal-open {
   width: 100%;
   z-index: 100;
 
-  .bg {
-    background-image: url(img/header-bg-1-1.png);
-  }
-
   .header-logo {
     margin-left: -30px;
   }
@@ -1718,8 +1714,6 @@ body.modal-open {
   .header {
     .bg {
       background-position: 63%;
-
-      background-image: url(img/header-bg-2.png);
     }
   }
 
