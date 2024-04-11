@@ -48,14 +48,30 @@ body.modal-open {
   }
 }
 
+.clip-path-content {
+  position: absolute;
+  inset: 0;
+  width: 85%;
+  height: 100%;
+  clip-path: polygon(0 0, 86% 0, 74% 100%, 0 100%);
+  padding: 20px 0;
+  background-color: white;
+  z-index: -1;
+}
+
 .header {
   padding: 20px 0;
   // background-color: #fff;
   // position: relative;
+  background-color: #96c55b;
   position: absolute;
   top: 71px;
   width: 100%;
   z-index: 100;
+
+  .bg {
+    background-image: url(img/header-bg-1-1.png);
+  }
 
   .header-logo {
     margin-left: -30px;
@@ -1256,7 +1272,9 @@ body.modal-open {
 @media only screen and (max-width: 991px) {
   .header {
     top: 0;
-
+    .clip-path-content {
+      clip-path: polygon(0 0, 88% 0, 74% 99%, 0 100%);
+    }
     .bg {
       background-position: 55%;
     }
@@ -1269,6 +1287,7 @@ body.modal-open {
       gap: 10px;
       margin-bottom: 20px;
     }
+
     i {
       font-size: 32px;
     }
@@ -1699,6 +1718,8 @@ body.modal-open {
   .header {
     .bg {
       background-position: 63%;
+
+      background-image: url(img/header-bg-2.png);
     }
   }
 
@@ -1944,6 +1965,33 @@ body.modal-open {
 
   .footer {
     padding-bottom: 50px;
+
+    .col-lg-4 {
+      text-align: center;
+
+      .footer-logo {
+        margin-left: 0;
+      }
+
+      .footer-socials {
+        justify-content: center;
+      }
+    }
+
+    .kontakt-column {
+      text-align: center;
+      .footer-kontakt-div {
+        margin-left: 90px;
+      }
+    }
+
+    .rjesenja-column {
+      text-align: center;
+    }
+
+    .col-lg-2 {
+      text-align: center;
+    }
 
     .footer-border {
       padding-top: 40px;

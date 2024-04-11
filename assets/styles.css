@@ -34,12 +34,27 @@ body.modal-open {
   justify-content: end;
 }
 
+.clip-path-content {
+  position: absolute;
+  inset: 0;
+  width: 85%;
+  height: 100%;
+  clip-path: polygon(0 0, 86% 0, 74% 100%, 0 100%);
+  padding: 20px 0;
+  background-color: white;
+  z-index: -1;
+}
+
 .header {
   padding: 20px 0;
+  background-color: #96c55b;
   position: absolute;
   top: 71px;
   width: 100%;
   z-index: 100;
+}
+.header .bg {
+  background-image: url(img/header-bg-1-1.png);
 }
 .header .header-logo {
   margin-left: -30px;
@@ -992,6 +1007,9 @@ body.modal-open {
   .header {
     top: 0;
   }
+  .header .clip-path-content {
+    clip-path: polygon(0 0, 88% 0, 74% 99%, 0 100%);
+  }
   .header .bg {
     background-position: 55%;
   }
@@ -1315,6 +1333,7 @@ body.modal-open {
 @media only screen and (max-width: 575px) {
   .header .bg {
     background-position: 63%;
+    background-image: url(img/header-bg-2.png);
   }
   .hero-section {
     margin-bottom: 160px;
@@ -1496,6 +1515,27 @@ body.modal-open {
   }
   .footer {
     padding-bottom: 50px;
+  }
+  .footer .col-lg-4 {
+    text-align: center;
+  }
+  .footer .col-lg-4 .footer-logo {
+    margin-left: 0;
+  }
+  .footer .col-lg-4 .footer-socials {
+    justify-content: center;
+  }
+  .footer .kontakt-column {
+    text-align: center;
+  }
+  .footer .kontakt-column .footer-kontakt-div {
+    margin-left: 90px;
+  }
+  .footer .rjesenja-column {
+    text-align: center;
+  }
+  .footer .col-lg-2 {
+    text-align: center;
   }
   .footer .footer-border {
     padding-top: 40px;
